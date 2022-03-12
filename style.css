@@ -1,14 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+
 body,
 html,
 h1,
 h2,
 h3,
 p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Fredoka", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #dcdde1;
 }
 body{
+    margin: 0;
     background-color: #2f3640;
+}
+.image-maintop {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../img/ID-id-20220307-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  padding-top: 60px;
+  padding-bottom: 82px;
+}
+
+.image-maintop .container {
+  text-align: center;
+  color: rgb(204, 204, 204);
+  opacity: 1;
+  margin: 100px;
+}
+
+.image-maintop .container h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.image-maintop .container .btn {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 16px;
+  color: white;
+  border-radius: 5px;
+  width: 90px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.image-maintop .container .mulai {
+  background-color: red;
+  font-family: "Fredoka", Arial, sans-serif;
+  font-size: 14px;
+  border: 1px solid red;
+}
+
+.image-maintop .container input[type="text"] {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 16px;
+  width: 400px;
+  font-family: "Fredoka", Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
 }
 .mainmid {
   background-color: #2f3640;
