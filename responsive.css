@@ -1,3 +1,36 @@
-@media(max-width:1000px){
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Fredoka", Arial, sans-serif;
+}
+
+/* untuk tablet */
+@media(max-width:1000px){
+  .image-maintop .container .btn {
+    float: left;
+    margin: 5px 0 0 52%;
+  }
+}
+
+/* untuk smartphone */
+@media (max-width: 670px) {
+  .image-maintop {
+    width: 171%;
+    height: 171%;
+  }
+
+  .image-maintop .container input[type="text"] {
+    width: 75%;
+    margin: auto;
+  }
+
+  .image-maintop .container .btn {
+    float: left;
+    margin: 25px 0 0 52%;
+  }
 }
