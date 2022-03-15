@@ -1,4 +1,7 @@
 @media all and (max-width: 1300px) {
+  .image-maintop .container h1 {
+    font-size: 90px;
+  }
   /* mainmid:Quadrant Barokatus Salam */
   .card,
   .card2 {
@@ -15,8 +18,18 @@
 @media all and (max-width: 1000px) {
   /* maintop:Rahmat Rafli */
   .image-maintop .container .btn {
-    float: left;
-    margin: 5px 0 0 52%;
+    float: center;
+    height: 50%;
+  }
+  .image-maintop .container h1 {
+    font-size: 65px;
+  }
+  .image-maintop .container h2 {
+    font-size: 20px;
+  }
+  .image-maintop .container input[type="text"] {
+    width: 60%;
+    margin: auto;
   }
   /* mainmid:Quadrant Barokatus Salam */
   .contentmid h1 {
@@ -29,44 +42,103 @@
     width: 200px;
     height: 200px;
   }
-}
-@media all and (max-width: 670px) {
-  /* maintop:Rahmat Rafli */
-  .image-maintop {
-    width: 171%;
-    height: 171%;
+  /* mainbot rudy hermawan */
+  .fqa {
+    width: 80%;
   }
+  .mainbot form {
+    width: auto;
+  }
+  .mainbot .langganan input[type="text"] {
+    width: 300px;
+  }
+  /* footer */
+  .footer-logo {
+    width: 200px;
+    height: auto;
+  }
+  @media all and (max-width: 670px) {
+    /* maintop:Rahmat Rafli */
+    .image-maintop {
+    }
+    .image-maintop .container {
+      margin: 20px;
+    }
+    .image-maintop .container input[type="text"] {
+      width: 90%;
+      margin: auto;
+    }
+    .image-maintop .container h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .image-maintop .container h2 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
 
-  .image-maintop .container input[type="text"] {
-    width: 75%;
-    margin: auto;
-  }
+    .image-maintop .container .btn {
+      margin-right: 0px;
+    }
+    /* mainmid:Quadrant Barokatus Salam */
+    .card {
+      flex-direction: column;
+    }
+    .card2 {
+      flex-direction: column-reverse;
+    }
+    .contentmid {
+      width: 75%;
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+    .contentmid h1 {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .contentmid h2 {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .gbr {
+      padding-bottom: 30px;
+    }
+    /* mainbot rudy hermawan */
+    .fqa {
+      width: 94%;
+    }
 
-  .image-maintop .container .btn {
-    float: left;
-    margin: 25px 0 0 52%;
-  }
-  /* mainmid:Quadrant Barokatus Salam */
-  .card {
-    flex-direction: column;
-  }
-  .card2 {
-    flex-direction: column-reverse;
-  }
-  .contentmid {
-    width: 75%;
-    margin-bottom: 0px;
-    padding: 0px;
-  }
-  .contentmid h1 {
-    text-align: center;
-    margin-bottom: 0px;
-  }
-  .contentmid h2 {
-    text-align: center;
-    margin-bottom: 0px;
-  }
-  .gbr {
-    padding-bottom: 30px;
+    .fqa h1 {
+      padding: 1rem 0 1.7rem 0;
+      font-size: 38px;
+    }
+    .text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .langganan h2 {
+      font-size: 18px;
+    }
+    .mainbot .langganan {
+      margin: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .mainbot .langganan .btn {
+      text-align: center;
+      justify-item: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mainbot form {
+      display: flex;
+      flex-direction: column;
+    }
+    .mainbot .langganan input[type="text"] {
+      width: auto;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
   }
 }
