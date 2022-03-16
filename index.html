@@ -16,18 +16,46 @@
     <link rel="shortcut icon" href=".logo/R.svg" type="image/x-icon" />
   </head>
   <body>
-    <header> <div class="header">
-        <div class="header-logo"><img class="Raflix" src="./logo/Raflix.png"><! –– gini kak manggil di foldernya ––>
+          <div class="image-maintop">
+    <header>
+      
+    <div class="header">
+      <div class="header-logo"><a href="#"><img class="Raflix" src="./logo/Raflix.png"></a>
+      </div>
+      <div class="headerr">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Bahasa</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#indonesia">Indonesia</a>
+            <a href="#english">English</a>
+          </div>
         </div>
-        <div class="dropdown"> <a href="#" class="sign-in">Sign In</a>
-            <button onclick="myFunction()" class="dropbtn">Language</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Indonesia</a>
-              <a href="#">English</a>
-            </div>
-        </div>  </header>
+        <a href="#" class="sign-in">Sign In</a>
+      </div>
+  </header>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
     <div class="maintop">
-      <div class="image-maintop">
+
         <div class="container">
           <h1>Film, acara TV tak terbatas, dan lebih banyak lagi.</h1>
           <h2>
@@ -169,7 +197,7 @@
         <div class="list-1">
           <p>Hubungi Kami</p>
           <a href="https://t.me/%20MuQH7D9rkRw5NDI1">
-            <img src="./logo/tele2.png" alt="Logo Telegram">
+            <img style="filter: grayscale(100%)" src="./logo/tele2.png" alt="Logo Telegram">
           </a>
         </div>
         <div class="list-2">
