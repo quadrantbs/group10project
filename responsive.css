@@ -14,6 +14,9 @@
   .contentmid h2 {
     font-size: 24px;
   }
+  .image-maintop .container {
+    margin: 100px;
+  }
 }
 @media all and (max-width: 1000px) {
   /* maintop:Rahmat Rafli */
@@ -53,14 +56,35 @@
     width: 300px;
   }
   /* footer */
-  .footer-logo {
-    width: 200px;
+  .footer {
     height: auto;
+    width: auto;
+  }
+  .footer-logo {
+    margin-top: 110px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 0px;
+    width: 200px;
+    height: 100px;
   }
   @media all and (max-width: 670px) {
-    /* maintop:Rahmat Rafli */
-    .image-maintop {
+    .headerr {
+      display: flex;
+      flex-direction: column;
+      float: right;
+      margin-right: 50px;
+      margin-top: 5px;
     }
+    .dropbtn {
+      margin-bottom: 10px;
+    }
+    .sign-in {
+      margin-right: 15px;
+    }
+
+    /* maintop:Rahmat Rafli */
     .image-maintop .container {
       margin: 20px;
     }
@@ -127,7 +151,6 @@
     }
     .mainbot .langganan .btn {
       text-align: center;
-      justify-item: center;
       margin-left: auto;
       margin-right: auto;
     }
@@ -139,6 +162,28 @@
       width: auto;
       margin-left: 30px;
       margin-right: 30px;
+    }
+
+    /* footer */
+    .footer {
+      height: auto;
+      width: auto;
+      flex-wrap: wrap;
+      flex-basis: 0;
+      flex-flow: column wrap;
+      align-content: center;
+    }
+    .footer-logo {
+      margin: 0px;
+      padding-top: 30px;
+      padding-bottom: 0px;
+      padding-left: 30px;
+      padding-right: 0px;
+      height: auto;
+      width: 200px;
+    }
+    .footer-about {
+      padding-right: 0px;
     }
   }
 }
